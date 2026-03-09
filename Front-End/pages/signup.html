@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../assets/icons/lamp-purple.svg" type="image/x-icon">
+    <link rel="stylesheet" href="../styles/forms.css">
+    <script src="../scripts/signup.js" type="module" defer></script>
+    <title>VladSchool | Cadastro</title>
+</head>
+<body>
+    <section>
+        <div>
+            <h1>Cadastro</h1>
+            <p>seja bem vindo à VladSchool</p>
+        </div>
+        <a href="login.html" class="signup">já tem cadastro? faça login</a>
+    </section>
+
+    <form>
+        <div>
+            <label for="iReg">matrícula</label>
+            <input type="text" id="iReg" name="iReg" placeholder="xxxxxxx" required>
+        </div>
+
+        <div>
+            <label for="iEmail">email</label>
+            <input type="email" id="iEmail" name="iEmail" placeholder="seu@email.com" required autocomplete="email">
+        </div>
+
+        <div>
+            <label for="iPasswd">senha</label>
+            <input type="password" id="iPasswd" name="iPasswd" placeholder="senha" required autocomplete="new-password" >
+        </div>
+        <div>
+            <input type="submit" value="logar">
+        </div>
+    </form>
+
+</body>
+</html>

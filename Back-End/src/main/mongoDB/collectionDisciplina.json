@@ -1,0 +1,14 @@
+[
+    {
+        "id_disciplina":1,
+        "nome":"teoria da conspiração"
+    },
+    {
+        "id_disciplina":2,
+        "nome":"programação orientada a apostas"
+    },
+    {
+        "id_disciplina":3,
+        "nome":"lavagem de dinheiro"
+    }
+]

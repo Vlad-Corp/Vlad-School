@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../../assets/icons/lamp-red.svg" type="image/x-icon">
+    <link rel="stylesheet" href="../../styles/area/choose.css">
+    <title>VladSchool</title>
+</head>
+<body>
+    <input type="checkbox" id="iToggle" hidden>
+    <aside>
+        <section class="asideHeader">
+            <div>
+                <h2>PROFESSOR</h2>
+                <p>Ana Souza</p>
+            </div>
+            <label for="iToggle"><img src="../../assets/icons/toggle.svg"></label>
+        </section>
+
+        <nav>
+            <h2>GERAL</h2>
+            <a href="choose.html" style="background-color: var(--mainColorT);">
+                <img src="../../assets/icons/aside.svg">
+                <p>alunos</p>
+            </a>
+
+            <a href="prof.html">
+                <img src="../../assets/icons/aside.svg">
+                <p>professores</p>
+            </a>
+            
+            <a href="pre-obs.html">
+                <img src="../../assets/icons/aside.svg">
+                <p>observações</p>
+            </a>
+            
+            <a href="dashboard.html">
+                <img src="../../assets/icons/aside.svg">
+                <p>dashboard</p>
+            </a>
+        </nav>
+
+        <section class="asideFooter">
+            <img src="../../assets/icons/lamp-red.svg">
+            <h1>VladSchool</h1>
+        </section>
+    </aside>
+
+    <main>
+        <header>
+            <label for="iToggle" class="labelToggle"> <img src="../../assets/icons/menu.svg"></label>
+            <input type="text" id="studName" placeholder="nome do aluno">
+            <button onclick="addStud.showModal()">adicionar</button>
+            <select id="sTurmas">
+                <option selected hidden>Turmas</option>
+                <option value="all">Todas</option>
+                <option value="6A">6ºA</option>
+                <option value="7A">7ºA</option>
+                <option value="8A">8ºA</option>
+                <option value="9A">9ºA</option>
+                <option value="1A">1ºA</option>
+                <option value="2A">2ºA</option>
+                <option value="3A">3ºA</option>
+            </select>
+        </header>
+        
+        <section class="table">
+            <a href="grade.html">
+                <div>
+                    <h2>João Silva</h2>
+                    <p>9ºD</p>
+                </div>
+                <img src="../../assets/icons/arrow.svg">
+            </a>
+
+            <a href="">
+                <div>
+                    <h2>João Silva</h2>
+                    <p>9ºD</p>
+                </div>
+                <img src="../../assets/icons/arrow.svg">
+            </a>
+
+            <a href="">
+                <div>
+                    <h2>João Silva</h2>
+                    <p>9ºD</p>
+                </div>
+                <img src="../../assets/icons/arrow.svg">
+            </a>
+
+            <a href="">
+                <div>
+                    <h2>João Silva</h2>
+                    <p>9ºD</p>
+                </div>
+                <img src="../../assets/icons/arrow.svg">
+            </a>
+        </section>
+    </main>
+
+    <dialog id="addStud">
+        <form method="post">
+            <div>
+                <label for="iName">nome</label>
+                <input type="text" id="iName" autocapitalize="" placeholder="nome e sobrenome">
+            </div>
+            <div>
+                <label for="iReg">matrícula</label>
+                <input type="text" id="iReg" maxlength="10" placeholder="xxxx-xxxxx">
+            </div>
+            <div>
+                <label for="iClass">turma</label>
+                <select id="iClass">
+                    <option value="9A">9ª A</option>
+                    <option value="9B">9ª B</option>
+                    <option value="9C">9ª C</option>
+                    <option value="9D">9ª D</option>
+                </select>
+            </div>
+            <input type="submit" value="adicionar">
+        </form>
+    </dialog>
+
+    <script>
+        document.documentElement.style.setProperty('--mainColor', '#FF383C')
+        document.documentElement.style.setProperty('--mainColorT', '#FF383C33')
+    </script>
+</body>
+</html>

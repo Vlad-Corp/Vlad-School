@@ -1,0 +1,38 @@
+{
+    "nome_usuario": "joao.silva",
+    "senha": "senha123",
+    "tipo": "aluno",
+    "nome": "João Silva",
+    "dados_aluno": {
+      "observacoes": [
+        {
+          "observacao": "Aluno participativo nas aulas",
+          "data": "2024-03-15",
+          "id_professor": 1
+        },
+        {
+          "observacao": "Precisa melhorar na entrega de trabalhos",
+          "data": "2024-04-20",
+          "id_professor": 2
+        }
+      ],
+      "notas": [
+        {
+          "periodo": "2024-1",
+          "id_professor": 1,
+          "id_disciplina": 101,
+          "nota": 8.5
+        },
+        {
+          "periodo": "2024-1",
+          "id_professor": 2,
+          "id_disciplina": 102,
+          "nota": 9
+        }
+      ],
+      "matricula": "20240001",
+      "serie": "9º ano",
+      "status": "ativo"
+    },
+    "email": "joao@escola.com"
+  }

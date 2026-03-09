@@ -1,0 +1,41 @@
+[
+    {
+        "nome": "Ana Souza",
+        "nome_usuario": "ana.mat",
+        "senha": "123456",
+        "tipo": "professor",
+        "email": "ana.souza@institutojef.org.br",
+        "dados_professor": {
+          "id_professor": 1,
+          "disciplinaLecionadas": [1]
+        }
+      },
+
+{
+  "nome": "Lucas Cayres",
+  "nome_usuario": "lucas.cay",
+  "senha": "123456",
+  "email": "lucas.cay@institutojef.org.br",
+  "tipo": "aluno",
+  "dados_aluno": {
+    "matricula": 1234567,
+    "serie": "1F",
+    "notas": [
+      {
+        "periodo": "2026.1",
+        "id_professor": 1,
+        "id_disciplina": 1,
+        "nota": 9.5
+      }
+    ],
+    "status": "aprovado",
+    "observacoes": [
+      {
+        "id_professor": 1,
+        "data": "2026-07-15",
+        "observacao": "Aluno apresenta um pensamento crítico aguçado, questionando teorias convencionais e explorando novas perspectivas."
+      }
+    ]
+  }
+}
+]

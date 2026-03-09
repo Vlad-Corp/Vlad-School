@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap');
+
+::-webkit-scrollbar {display: none}
+::selection {background: var(--mainColorT)}
+
+:root {
+    --color00: #FFF;
+    --bgColor01: #000;
+    --bgColor02: #121212;
+    --bgColor03: #232323;
+
+    --fontText: 'Archivo';
+}
+
+* {
+    margin: 0;
+    padding: 0;
+
+    color: var(--color00);
+    font-family: var(--fontText);
+    outline: none;
+    text-decoration: none;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    border: 0;
+}
+
+body {
+    background: var(--bgColor01);
+    width: 100dvw; height: 100dvh;
+}
+
+
+
+aside {
+    background: var(--bgColor02);
+    width: 75dvw;
+    height: 100dvh;
+    padding: 40px 15px 55px 15px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    position: fixed;
+    z-index: 100;
+
+    transform: translateX(-100%);
+    transition: transform 400ms ease;
+}
+
+:has(#iToggle:checked) aside {
+    transform: translateX(0);
+}
+
+.labelToggle {display: block}
+
+aside h1 {
+    font-size: 1.7em;
+}
+
+h2 {
+    font-size: 0.8em;
+    color: hsl(0, 0%, 32%);
+}
+
+aside nav {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+aside a {
+    display: flex;
+    width: 100%;
+    gap: 10px;
+    padding: 20px;
+    background: #0000001a;
+    border-radius: 10px;
+}
+
+aside section {
+    display: flex;
+    align-items: center;
+}
+
+.asideHeader {
+    justify-content: space-between;
+    padding: 15px;
+}
+
+.asideFooter {
+    gap: 15px;
+    margin: 0 auto;
+}
+
+.labelToggle {display: block}
+
+aside h1 {
+    font-size: 1.7em;
+}
+
+aside h2 {
+    font-size: 0.8em;
+    color: hsl(0, 0%, 32%);
+}
+
+aside nav {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+aside a {
+    display: flex;
+    width: 100%;
+    gap: 10px;
+    padding: 20px;
+    background: #0000001a;
+    border-radius: 10px;
+}
+
+aside section {
+    display: flex;
+    align-items: center;
+}
+
+.asideHeader {
+    justify-content: space-between;
+    padding: 15px;
+}
+
+.asideFooter {
+    gap: 15px;
+    margin: 0 auto;
+}
+
+.labelToggle {
+    padding: 20px;
+}
+
+main h1{
+    margin-bottom: 25px;
+    margin-left: 25px;
+}
+
+table {
+    border-collapse: collapse;
+    background: var(--bgColor02);
+    margin-left: 20px;
+    width: 1000px;
+}
+
+.thead {
+    background: var(--mainColor);
+    position: sticky;
+    top: 20px;
+    z-index: 10;
+}
+
+th {color: var(--bgColor01)}
+
+td, th {
+    padding: 15px;
+    height: 60px;
+}
+
+.prof td:not(:first-child):not(:last-child) input {
+    text-align: center;
+}
+
+tr:not(:first-child):hover * {
+    background: var(--bgColor03);
+    transition: 300ms
+}
+
+
+dialog {
+    position: fixed;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+
+    background: var(--bgColor01);
+    border: 2px solid var(--bgColor02);
+    width: 80vw;
+    padding: 30px 20px;
+}
+
+dialog form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+dialog label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+dialog input {
+    background: #0A0A0A;
+    width: 100%;
+    padding: 15px 10px;
+
+    transition: 500ms;
+}
+
+dialog input[type="submit"] {
+    background: var(--mainColor);
+    border: 0;
+}
+
+dialog input:focus {
+    border: 2px solid var(--mainColor);
+    box-shadow: 0 16px 48px var(--mainColorT);
+}
+
+dialog::backdrop {background: #000000bb}
+
+
+@media screen and (min-width: 768px) {
+    body {
+        display: grid;
+        grid-template-columns: 20dvw 80dvw ;
+    }
+
+    aside {
+        position: initial;
+        width: 100%;
+        height: 100vh;
+        transform: none;
+    }
+
+    aside label img, .labelToggle {display: none}
+
+    main {
+        margin: 0 auto;
+        margin-top: 100px;
+    }
+
+    table {
+        width: 70dvw;
+    }
+
+    dialog {
+        width: 30dvw;
+    }
+}
