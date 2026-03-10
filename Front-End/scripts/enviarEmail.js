@@ -64,7 +64,7 @@ window.enviarEmail = async function(event){
     
     try {
         await enviarEmailBack(email);
-        window.location.href = './codigo.html';
+        window.location.href = '../pages/codigo.html';
     } catch (error) {
         btnSubmit.style.display = 'block';
         loadingContainer.style.display = 'none';

@@ -41,7 +41,7 @@ window.verificar = async function(event) {
         console.log(sucesso)
         if (sucesso) {
             alert('código correto redirecionando...')
-            window.location.href = './novaSenha.html'; // redireciona
+            window.location.href = '../pages/novaSenha.html'; // redireciona
         } else {
             alert('Código inválido ou expirado');
         }
